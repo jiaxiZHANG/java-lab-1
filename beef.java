@@ -1,23 +1,29 @@
 public class beef extends Food{
     public String getFilling() {
-        return filling;
+        return preparedness
+                ;
     }
 
     public void setFilling(String filling) {
-        this.filling = filling;
+        this.preparedness
+                = filling;
     }
 
-    private String filling;
+    private String preparedness
+            ;
     public beef(String filling ) {
         super("beef");
-        this.filling = filling;
+        this.preparedness
+                = filling;
 
     }
     @Override
     public boolean equals(Object arg0) {
         if (super.equals(arg0)) {
             if (!(arg0 instanceof beef)) return false;
-            return filling.equals(((beef)arg0).filling);
+            return preparedness
+                    .equals(((beef)arg0).preparedness
+                    );
         } else
             return false;
     }
@@ -29,6 +35,7 @@ public class beef extends Food{
     }
     @Override
     public String toString(){
-        return "preparedness " + filling;
+        return "preparedness " + preparedness
+                ;
     }
 }
