@@ -1,20 +1,20 @@
 public class beef extends Food{
-    public String getFilling() {
+    public String getpreparedness() {
         return preparedness
                 ;
     }
 
-    public void setFilling(String filling) {
+    public void setpreparedness(String preparedness) {
         this.preparedness
-                = filling;
+                = preparedness;
     }
 
     private String preparedness
             ;
-    public beef(String filling ) {
+    public beef(String preparedness ) {
         super("beef");
         this.preparedness
-                = filling;
+                = preparedness;
 
     }
     @Override
